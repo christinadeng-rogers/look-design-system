@@ -1,0 +1,24 @@
+export const parameters = {
+  layout: "centered",
+  actions: { argTypesRegex: "^on[A-Z].*" },
+  controls: {
+    matchers: {
+      color: /(background|color)$/i,
+      date: /Date$/,
+    },
+  },
+  options: {
+    storySort: {
+      order: [
+        "Welcome",
+        "Changelog",
+        "Core Component",
+        "Columns",
+        "Elements",
+        "Components",
+        "Form",
+        "Layout",
+      ],
+    },
+  },
+};
