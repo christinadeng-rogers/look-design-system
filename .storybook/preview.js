@@ -10,14 +10,20 @@ export const parameters = {
   options: {
     storySort: {
       order: [
-        "Welcome",
-        "Changelog",
-        "Core Component",
-        "Columns",
-        "Elements",
-        "Components",
-        "Form",
-        "Layout",
+        "Introduction",
+        "README",
+        "UI Components",
+        "Design Concepts",
+        ["UX & UI", "Styling", "Responsiveness", "Accessibility"],
+        "Web Fundamental",
+        [
+          "HTML",
+          ["Basics", "Syntax", "Clean Code", "Quiz"],
+          "CSS",
+          "JavaScript",
+          "React",
+        ],
+        "Demo",
       ],
     },
   },

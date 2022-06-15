@@ -1,0 +1,191 @@
+import { Meta } from "@storybook/addon-docs";
+import "../../stories/markup.css";
+
+<Meta title="Web Fundamental/HTML/Basics" />
+
+# HTML: HyperText Markup Language
+
+HTML is the standard markup language for documents designed to be displayed in a web browser.
+
+<div className="subheading">Basic Web Concepts</div>
+<div className="link-list">
+  <a
+    className="link-item"
+    href="https://storybook.js.org/docs/react/get-started/setup#configure-storybook-for-your-stack"
+    target="_blank"
+    draggable="false"
+  >
+    <span>
+      <h4>Web Server</h4>
+      <em>Client Side vs Browser Side for Static and Dynamic Web.</em>
+    </span>
+  </a>
+  <a
+    className="link-item"
+    href="https://storybook.js.org/docs/react/get-started/setup#configure-storybook-for-your-stack"
+    target="_blank"
+  >
+    <span>
+      <strong>HTTP - Hypertext Transfer Protocol</strong>
+      <p>HTTP is a protocol for fetching resources such as HTML documents.</p>
+      <p>REST API</p>
+      <img src="https://www.visual-paradigm.com/servlet/editor-content/cn/guide/development/what-is-rest-api/sites/7/2019/09/rest-and-http.png" />
+      <p>HTTP Status Code</p>
+      <img src="https://blog.online-convert.com/wp-content/uploads/2022/03/Most-Common-HTTP-Error-Codes-Image.jpg" />
+    </span>
+  </a>
+  <a
+    className="link-item"
+    href="https://storybook.js.org/docs/react/get-started/setup#configure-storybook-for-your-stack"
+    target="_blank"
+  >
+    <span>
+      <strong>SEO</strong>
+      <p>Title and header; how to improve SEO</p>
+    </span>
+  </a>
+</div>
+
+<div className="subheading">HTML Fundamental</div>
+<div className="link-list">
+  <a
+    className="link-item"
+    href="https://storybook.js.org/docs/react/addons/addon-types"
+    target="_blank"
+  >
+    <span>
+      <h4>Anatomy of HTML elements</h4>
+      <table>
+        <tr>
+          <th>Paired</th>
+          <th>Unpaired</th>
+        </tr>
+        <tr>
+          <td>
+            <code>
+              <span className="code-span">&lt;p&gt;</span>
+              <span className="code-span">Hello World</span>
+              <span className="code-span">&lt;&#x0002F;p&gt;</span>
+            </code>
+          </td>
+          <td>
+            <code>
+              <span className="code-span">&lt;img&gt;</span>
+              &nbsp;or&nbsp;
+              <span className="code-span">&lt;img&nbsp;&#x0002F;&gt;</span>
+            </code>
+          </td>
+        </tr>
+      </table>
+      <p>
+        <b>Opening tag:</b> states where the element begins or starts to take
+        effect.
+      </p>
+      <p>
+        <b>Content:</b> the content of the element. (note: some HTML elements
+        have no content, these elements are called empty elements)
+      </p>
+      <p>
+        <b>Closing tag:</b> matches with opening tag, except the closing tag
+        includes a forward slash before the element name. This states where the
+        element ends.
+      </p>
+      <p>
+        <b>Empty elements: </b> empty tags contain only the opening tag but they
+        perform some action in the webpage.
+      </p>
+    </span>
+  </a>
+  <a
+    className="link-item"
+    href="https://www.w3.org/TR/WD-DOM/introduction.html"
+    target="_blank"
+  >
+    <span>
+      <h4>Document Object Model</h4>
+      <em>
+        DOM is a programming API for HTML and XML documents. It defines the
+        logical structure of documents and the way a document is accessed and
+        manipulated.
+      </em>
+      <br />
+      <br />
+      <h5>DOM Tree</h5>
+      <em>
+        The DOM is often referred to as the DOM tree, and consists of a tree of
+        objects called nodes.{" "}
+      </em>
+      <table>
+        <tr>
+          <th>DOM of HTML</th>
+          <th>DOM of Table</th>
+        </tr>
+        <tr>
+          <td>
+            <img src="https://i.stack.imgur.com/IERlg.png" />
+          </td>
+          <td>
+            <img src="https://www.researchgate.net/profile/Fabrizio-Ferrandi/publication/4344824/figure/fig3/AS:667677588738056@1536198150438/Example-of-a-DOM-Tree-representation.png" />
+          </td>
+        </tr>
+      </table>
+      <h5>Shadow DOM vs. Virtual DOM</h5>
+      <p>Shadow DOM</p>
+      <ul>
+        <li>
+          Isolates the DOM so the DOM of the component is a separate element
+          which will not appear in a global DOM.
+        </li>
+        <li>
+          Styles created inside the single Shadow DOM element are isolated and
+          stays in the scope of that Shadow DOM.
+        </li>
+        <li>It can affect the performance of the application.</li>
+      </ul>
+      <p>Virtual DOM</p>
+      <ul>
+        <li>
+          Browser knows which elements were changed and can update only those
+          part of the application to avoid re-rendering all the DOM.
+        </li>
+        <li>Improve the performance of the UI libraries.</li>
+        <li>
+          The biggest issue that Virtual DOM solves is the performance
+          improvement on DOM manipulation.
+        </li>
+      </ul>
+      <p>
+        Common: they both help with performance issue. And both create a
+        separate instance of the Document Object Model.
+      </p>
+      <p>Main differences</p>
+      <table>
+        <tr>
+          <th>Shadow DOM</th>
+          <th>Virtual DOM</th>
+        </tr>
+        <tr>
+          <td>
+            Create small piece of the DOM object which has their own, isolated
+            scope for the element they represent
+          </td>
+          <td>Create a copy of the whole DOM object</td>
+        </tr>
+      </table>
+    </span>
+  </a>
+  <a
+    className="link-item"
+    href="https://dev.w3.org/html5/html-author/charref"
+    target="_blank"
+  >
+    <span>
+      <h4>Entity Reference</h4>
+      <em>
+        Piece of text that begin with an ampersand (&) and ends with a
+        semicolon(;)
+      </em>
+      <img src="https://www.technipages.com/wp-content/uploads/2020/11/html-entities-header-600x342.png" />
+    </span>
+  </a>
+</div>

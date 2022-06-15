@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-import { Button } from '../../Input Controls/button/Button';
+import { Button } from '../../input/button/Button';
 import './header.css';
 
 export const Header = ({ user, onLogin, onLogout, onCreateAccount }) => (

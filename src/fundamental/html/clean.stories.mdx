@@ -1,0 +1,262 @@
+import { Meta } from "@storybook/addon-docs";
+
+<Meta title="Web Fundamental/HTML/Clean Code" />
+
+<style>
+  {`
+    .subheading {
+      --mediumdark: '#999999';
+      font-weight: 900;
+      font-size: 13px;
+      color: #999;
+      letter-spacing: 6px;
+      line-height: 24px;
+      text-transform: uppercase;
+      margin-bottom: 12px;
+      margin-top: 40px;
+    }
+
+    .link-list {
+      display: grid;
+      grid-template-columns: 1fr;
+      row-gap: 10px;
+    }
+
+    .link-item {
+      display: block;
+      padding: 20px 30px 20px 15px;
+      border: 1px solid #00000010;
+      border-radius: 5px;
+      transition: background 150ms ease-out, border 150ms ease-out, transform 150ms ease-out;
+      color: #333333;
+      display: flex;
+    }
+
+    .link-item:hover {
+      border-color: #1EA7FD50;
+      transform: translate3d(0, -3px, 0);
+      box-shadow: rgba(0, 0, 0, 0.08) 0 3px 10px 0;
+    }
+
+    .link-item:active {
+      border-color: #1EA7FD;
+      transform: translate3d(0, 0, 0);
+    }
+
+    .link-item strong {
+      font-weight: 700;
+      display: block;
+      margin-bottom: 2px;
+    }
+
+    .link-item span {
+      font-size: 14px;
+      line-height: 20px;
+    }
+  `}
+</style>
+
+# HTML: Write Clean Code
+
+Write clean and easy-to-understand HTML code is the foundation of a beautiful website.
+It also plays an important role in SEO. <br/> Use validation tool to validate your html code: <a>https://validator.w3.org/</a>.
+
+Here are some principles for writting clean HTML code:
+
+<div className="subheading">1. Use Proper Document Structure</div>
+<div className="link-list">
+  <a
+    className="link-item"
+    href="https://www.htmlquick.com/tutorials/document-structure.html"
+    target="_blank"
+  >
+    <span>
+      <div className="section-1">
+        <h6>Always includes the following elements in your HTML documents</h6>
+        <ul>
+          <li>
+            The DTD: <code>&lt;!DOCTYPE&gt;</code> declaration
+            <ul>
+              <li>
+                HTML5 Standard: <code>&lt;!DOCTYPE html&gt;</code>
+              </li>
+            </ul>
+          </li>
+          <li>
+            The main container: <code>&lt;html&gt;</code> element
+            <ul>
+              <li>
+                Define the default language used by the document, through the
+                global attribute <code>lang="en"</code>
+              </li>
+            </ul>
+          </li>
+          <li>
+            The head section: <code>&lt;head&gt;</code> element
+            <ul>
+              <li>
+                Add metadata about the document:
+                <code>&lt;title&gt;</code>
+                <code>&lt;style&gt;</code>
+                <code>&lt;script&gt;</code>
+                <code>&lt;meta&gt;</code>
+                <code>&lt;link&gt;</code>
+              </li>
+              <li>
+                Title: describes the subject treated in the document, very
+                important for SEO.
+              </li>
+              <li>
+                Style: set presentational attributes for the elements in the
+                document. (Internal or External CSS)
+              </li>
+              <li>Script: provides functionaliy and interactivity.</li>
+              <li>
+                Meta: defines custom attributes and values. (example:
+                charset="UTF-8", viewport, keywords, etc)
+              </li>
+              <li>
+                Link: indicates resources that are related to the document.
+              </li>
+            </ul>
+          </li>
+          <li>
+            The body section: <code>&lt;body&gt;</code> element
+            <ul>
+              <li>
+                The container for rederable part. Display content (heading,
+                paragraphs, image, etc) of the website.
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </span>
+  </a>
+  <a
+    className="link-item"
+    href="https://storybook.js.org/docs/react/addons/addon-types"
+    target="_blank"
+  >
+    <span>
+      <div className="section-1">
+        <strong>Page Structure</strong>
+        <p> Visualization of an HTML page structure</p>
+        <div className="container page-container">
+          &lt;html&gt;
+          <div className="container header-container">
+            &lt;head&gt;
+            <div className="container title-container">
+              &lt;title&gt;HTML Title&lt;&#x0002F;title&gt;
+            </div>
+            &lt;&#x0002F;head&gt;
+          </div>
+          <div className="container body-container">
+            &lt;body&gt;
+            <div className="container content-container">
+              &lt;div&gt;HTML Content&lt;&#x0002F;div&gt;
+            </div>
+            <div className="container content-container">
+              &lt;div&gt;HTML Content&lt;&#x0002F;div&gt;
+            </div>
+            <div className="container content-container">
+              &lt;div&gt;HTML Content&lt;&#x0002F;div&gt;
+            </div>
+            &lt;&#x0002F;body&gt;
+          </div>
+        </div>
+        <p>
+          Trick: in VSC, create html file and type ! in your file, click enter:
+        </p>
+      </div>
+    </span>
+  </a>
+</div>
+
+<div className="subheading">2. Write Standards-Compliant Markup</div>
+<div className="link-list">
+  <a
+    className="link-item"
+    href="https://chiamakaikeanyi.dev/writing-standards-compliant-html/"
+    target="_blank"
+  >
+    <span>
+      <div className="section-1">
+        <h6>
+          Accessibility cannot be achieved without quality and semantically
+          valid HTML
+        </h6>
+        <ul>
+          <li>Make sure to open and close and nest elements properly.</li>
+          <li>
+            Indent the code and nested components to show hierarchy. Indented
+            code is easier to read and maintain. (Install Prettier in VSC will
+            save you lots of time)
+          </li>
+          <li>
+            Separation of concerns: create separate HTML, CSS and JS files, it
+            will make code reusable and easier to read.
+          </li>
+          <li>
+            Be consistent: dash/underscore for ids and classes; single/double
+            quote argument; indent spaces.
+          </li>
+          <li>
+            Use lowercase for elements, attributes and values. leave typography
+            to the CSS.
+          </li>
+          <li>
+            Avoid Too Much Commenting: "Don't comment bad code. Rewrite it."
+            Continually Refactor Code!
+          </li>
+        </ul>
+      </div>
+    </span>
+  </a>
+</div>
+
+<div className="subheading">3. Make Use of Semantic Elements</div>
+<div className="link-list">
+  <a
+    className="link-item"
+    href="https://altcampus.school/posts/writing-semantically-correct-and-clean-html"
+    target="_blank"
+  >
+    <span>
+      <div className="section-1">
+        <li>
+          Alt text on image: provides a descriptive alternate text for images.
+          It helps screen readers to understand contents better. Decorative
+          images should have empty alt.
+        </li>
+        <li>
+          Naming Convention: use meaningful id and class name that's related to
+          the content (not the presentation). They should be short, descriptive
+          and represent only one concept.
+        </li>
+        <li>Logical Sequence: useful to screen readers.</li>
+        <li>
+          Use elements appropriately: avoid writing many <code>div</code> in
+          place of meaningul semantic HTML elements.
+          <ul>
+            <li>
+              Avoid using
+              <code>&lt;b&gt;</code>
+              <code>&lt;u&gt;</code>
+              <code>&lt;i&gt;</code>
+              <code>&lt;s&gt;</code>
+            </li>
+            <li>
+              Use
+              <code>&lt;strong&gt;</code>
+              <code>&lt;ins&gt;</code>
+              <code>&lt;em&gt;</code>
+              <code>&lt;del&gt;</code>
+              instead, since they have meaning for screen readers.
+            </li>
+          </ul>
+        </li>
+      </div>
+    </span>
+  </a>
+</div>

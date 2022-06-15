@@ -1,0 +1,218 @@
+import { Meta } from "@storybook/addon-docs";
+
+<Meta title="Web Fundamental/HTML/Syntax" />
+
+<style>
+  {`
+    .subheading {
+      --mediumdark: '#999999';
+      font-weight: 900;
+      font-size: 13px;
+      color: #999;
+      letter-spacing: 6px;
+      line-height: 24px;
+      text-transform: uppercase;
+      margin-bottom: 12px;
+      margin-top: 40px;
+    }
+
+    .link-list {
+      display: grid;
+      grid-template-columns: 1fr;
+      row-gap: 10px;
+    }
+
+    .link-item {
+      display: block;
+      padding: 20px 30px 20px 15px;
+      border: 1px solid #00000010;
+      border-radius: 5px;
+      transition: background 150ms ease-out, border 150ms ease-out, transform 150ms ease-out;
+      color: #333333;
+      display: flex;
+      justify-content: center;
+
+    }
+
+    .link-item:hover {
+      border-color: #1EA7FD50;
+      transform: translate3d(0, -3px, 0);
+      box-shadow: rgba(0, 0, 0, 0.08) 0 3px 10px 0;
+    }
+
+    .link-item:active {
+      border-color: #1EA7FD;
+      transform: translate3d(0, 0, 0);
+    }
+
+    .link-item strong {
+      font-weight: 700;
+      display: block;
+      margin-bottom: 2px;
+    }
+
+    .link-item span {
+      font-size: 14px;
+      line-height: 20px;
+    }
+    .code-span:hover {
+        color: #6D597A;
+        font-size: 20px;
+    }
+
+    .container {
+        border: 1px solid #00000010;
+  `}
+</style>
+
+# HTML: Syntax
+
+<div className="subheading">Heading</div>
+<div className="link-list">
+  <a
+    className="link-item"
+    href="https://storybook.js.org/docs/react/addons/addon-types"
+    target="_blank"
+  >
+    <span>
+      <div className="section-1">
+        <code>
+          {" "}
+          <h1>This is heading 1</h1>{" "}
+        </code>
+        <span>&lt;h1&gt;This is heading 1 &lt;&#x0002F;h1&gt;</span>
+        <br />
+        <code>
+          {" "}
+          <h2>This is heading 2</h2>{" "}
+        </code>
+        <span>&lt;h2&gt;This is heading 2 &lt;&#x0002F;h2&gt;</span>
+        <br />
+        <code>
+          {" "}
+          <h3>This is heading 3</h3>{" "}
+        </code>
+        <span>&lt;h3&gt;This is heading 3 &lt;&#x0002F;h3&gt;</span>
+        <br />
+        <code>
+          {" "}
+          <h4>This is heading 4</h4>{" "}
+        </code>
+        <span>&lt;h4&gt;This is heading 4 &lt;&#x0002F;h4&gt;</span>
+        <br />
+        <code>
+          {" "}
+          <h5>This is heading 5</h5>{" "}
+        </code>
+        <span>&lt;h5&gt;This is heading 5 &lt;&#x0002F;h5&gt;</span>
+        <br />
+        <code>
+          {" "}
+          <h6>This is heading 6</h6>{" "}
+        </code>
+        <span>&lt;h6&gt;This is heading 6 &lt;&#x0002F;h6&gt;</span>
+        <br />
+      </div>
+    </span>
+  </a>
+</div>
+
+<div className="subheading">Media</div>
+<div className="link-list">
+  <a
+    className="link-item"
+    href="https://storybook.js.org/docs/react/addons/addon-types"
+    target="_blank"
+  >
+    <span>
+      <div className="section-1">
+        <code>
+          {" "}
+          <h1>This is heading 1</h1>{" "}
+        </code>
+        <span>&lt;h1&gt;This is heading 1 &lt;&#x0002F;h1&gt;</span>
+        <br />
+        <code>
+          {" "}
+          <h2>This is heading 2</h2>{" "}
+        </code>
+        <span>&lt;h2&gt;This is heading 2 &lt;&#x0002F;h2&gt;</span>
+        <br />
+        <code>
+          {" "}
+          <h3>This is heading 3</h3>{" "}
+        </code>
+        <span>&lt;h3&gt;This is heading 3 &lt;&#x0002F;h3&gt;</span>
+        <br />
+        <code>
+          {" "}
+          <h4>This is heading 4</h4>{" "}
+        </code>
+        <span>&lt;h4&gt;This is heading 4 &lt;&#x0002F;h4&gt;</span>
+        <br />
+        <code>
+          {" "}
+          <h5>This is heading 5</h5>{" "}
+        </code>
+        <span>&lt;h5&gt;This is heading 5 &lt;&#x0002F;h5&gt;</span>
+        <br />
+        <code>
+          {" "}
+          <h6>This is heading 6</h6>{" "}
+        </code>
+        <span>&lt;h6&gt;This is heading 6 &lt;&#x0002F;h6&gt;</span>
+        <br />
+      </div>
+    </span>
+  </a>
+</div>
+
+<div className="subheading">Empty elements</div>
+<div className="link-list">
+  <a
+    className="link-item"
+    href="https://storybook.js.org/docs/react/addons/addon-types"
+    target="_blank"
+  >
+    <span>
+      <div className="section-1">
+        <code>
+          {" "}
+          <h1>This is heading 1</h1>{" "}
+        </code>
+        <span>&lt;h1&gt;This is heading 1 &lt;&#x0002F;h1&gt;</span>
+        <br />
+        <code>
+          {" "}
+          <h2>This is heading 2</h2>{" "}
+        </code>
+        <span>&lt;h2&gt;This is heading 2 &lt;&#x0002F;h2&gt;</span>
+        <br />
+        <code>
+          {" "}
+          <h3>This is heading 3</h3>{" "}
+        </code>
+        <span>&lt;h3&gt;This is heading 3 &lt;&#x0002F;h3&gt;</span>
+        <br />
+        <code>
+          {" "}
+          <h4>This is heading 4</h4>{" "}
+        </code>
+        <span>&lt;h4&gt;This is heading 4 &lt;&#x0002F;h4&gt;</span>
+        <br />
+        <code>
+          {" "}
+          <h5>This is heading 5</h5>{" "}
+        </code>
+        <span>&lt;h5&gt;This is heading 5 &lt;&#x0002F;h5&gt;</span>
+        <br />
+        <code>
+          {" "}
+          <h6>This is heading 6</h6>{" "}
+        </code>
+        <span>&lt;h6&gt;This is heading 6 &lt;&#x0002F;h6&gt;</span>
+        <br />
+      </div>
+    </span>
+  </a>
+</div>
